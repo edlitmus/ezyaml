@@ -1,8 +1,9 @@
 package yaml
 
 import (
-	"menteslibres.net/gosexy/to"
 	"testing"
+
+	"menteslibres.net/gosexy/to"
 )
 
 func TestRead(t *testing.T) {
@@ -24,7 +25,7 @@ func TestGet(t *testing.T) {
 	val1 := to.String(settings.Get("test_string"))
 
 	if val1 != test1 {
-		t.Errorf("Got %t expecting %t.", val1, test1)
+		t.Errorf("Got %s expecting %s.", val1, test1)
 	}
 
 	val2 := int(to.Int64(settings.Get("non_defined_int")))
@@ -38,28 +39,28 @@ func TestGet(t *testing.T) {
 	val3 := settings.Get("test_map", "element_3", "test_sequence").([]interface{})
 
 	if val3[2] != test3 {
-		t.Errorf("Got %t expecting %t.", val3[2], test3)
+		t.Errorf("Got %s expecting %s.", val3[2], test3)
 	}
 
 	test5 := "Hello World!"
 	val5 := to.String(settings.Get("test_string"))
 
 	if test5 != val5 {
-		t.Errorf("Got %t expecting %t.", test5, val5)
+		t.Errorf("Got %s expecting %s.", test5, val5)
 	}
 
 	test6 := 1234
 	val6 := int(to.Int64(settings.Get("test_int")))
 
 	if test6 != val6 {
-		t.Errorf("Got %t expecting %t.", test6, val6)
+		t.Errorf("Got %d expecting %d.", test6, val6)
 	}
 
 	test7 := float64(1.2)
 	val7 := to.Float64(settings.Get("test_float"))
 
 	if test7 != val7 {
-		t.Errorf("Got %t expecting %t.", test7, val7)
+		t.Errorf("Got %f expecting %f.", test7, val7)
 	}
 
 	test8 := true
@@ -115,7 +116,7 @@ func TestCompatGet(t *testing.T) {
 	val1 := to.String(settings.Get("test_string"))
 
 	if val1 != test1 {
-		t.Errorf("Got %t expecting %t.", val1, test1)
+		t.Errorf("Got %s expecting %s.", val1, test1)
 	}
 
 	val2 := int(to.Int64(settings.Get("non_defined_int")))
@@ -129,28 +130,28 @@ func TestCompatGet(t *testing.T) {
 	val3 := settings.Get("test_map", "element_3", "test_sequence").([]interface{})
 
 	if val3[2] != test3 {
-		t.Errorf("Got %t expecting %t.", val3[2], test3)
+		t.Errorf("Got %s expecting %s.", val3[2], test3)
 	}
 
 	test5 := "Hello World!"
 	val5 := to.String(settings.Get("test_string"))
 
 	if test5 != val5 {
-		t.Errorf("Got %t expecting %t.", test5, val5)
+		t.Errorf("Got %s expecting %s.", test5, val5)
 	}
 
 	test6 := 1234
 	val6 := int(to.Int64(settings.Get("test_int")))
 
 	if test6 != val6 {
-		t.Errorf("Got %t expecting %t.", test6, val6)
+		t.Errorf("Got %d expecting %d.", test6, val6)
 	}
 
 	test7 := float64(1.2)
 	val7 := to.Float64(settings.Get("test_float"))
 
 	if test7 != val7 {
-		t.Errorf("Got %t expecting %t.", test7, val7)
+		t.Errorf("Got %f expecting %f.", test7, val7)
 	}
 
 	test8 := true
