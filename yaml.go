@@ -25,6 +25,7 @@ package yaml
 
 import (
 	"fmt"
+	"io/ioutil"
 	"log"
 	"os"
 
@@ -133,29 +134,12 @@ func (y *Yaml) Write(filename string) error {
 
 // Read loads a YAML file from disk.
 func (y *Yaml) Read(filename string) error {
-	var err error
-
-	fileinfo, err := os.Stat(filename)
-
+	_, err := os.Stat(filename)
 	if err != nil {
 		return err
 	}
 
-	filesize := fileinfo.Size()
-
-	fp, err := os.Open(filename)
-
-	if err != nil {
-		return err
-	}
-
-	buf := make([]byte, filesize)
-	_, err = fp.Read(buf)
-	if err != nil {
-		return err
-	}
-
-	err = fp.Close()
+	buf, err := ioutil.ReadFile(filename)
 	if err != nil {
 		return err
 	}
