@@ -94,7 +94,9 @@ func (y *Yaml) Get(route ...interface{}) interface{} {
 
 	err := dig.Get(&y.Values, &i, route...)
 	if err != nil {
-		log.Print(err)
+		if debug := os.Getenv("YAML_DEBUG"); debug != "" {
+			log.Print(err)
+		}
 	}
 
 	return i
