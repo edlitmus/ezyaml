@@ -30,7 +30,7 @@ import (
 	"os"
 
 	"github.com/esilva-everbridge/dig"
-	yaml "gopkg.in/yaml.v1"
+	yaml "gopkg.in/yaml.v2"
 )
 
 // Yaml data type
