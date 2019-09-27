@@ -3,7 +3,7 @@ package yaml
 import (
 	"testing"
 
-	"menteslibres.net/gosexy/to"
+	"github.com/esilva-everbridge/to"
 )
 
 func TestRead(t *testing.T) {
