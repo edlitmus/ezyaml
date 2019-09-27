@@ -1,5 +1,7 @@
 github.com/esilva-everbridge/dig v0.0.0-20180223224648-c61b8cdf35b7 h1:QHjV7NNssIR8OZuUpNaEtILE2tsMwFrJAPafm4cOi54=
 github.com/esilva-everbridge/dig v0.0.0-20180223224648-c61b8cdf35b7/go.mod h1:OUzZBkSOo01ut4tb4kXlJujAKlOrmFQw9AhhsMZvrYc=
+github.com/esilva-everbridge/to v0.0.0-20141221203644-c20e083e3123 h1:BRKevk/4GkRqvOAiOAfHgWinhFOqhA/n9Mn9AuqjchM=
+github.com/esilva-everbridge/to v0.0.0-20141221203644-c20e083e3123/go.mod h1:P9AQHIs4EM0j8ei5+S0IqjnFcEueux2OM7VTN2BDu3A=
 github.com/gosexy/to v0.0.0-20141221203644-c20e083e3123 h1:6Q7VB4v0aEgIE6BtsbJhEH0KgFE0f+FHAxXePQp9Klc=
 github.com/gosexy/to v0.0.0-20141221203644-c20e083e3123/go.mod h1:oQuuq9ZkoRpy+2mhINlY3ZrwgywR77yPXmFpP6vCr/w=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
