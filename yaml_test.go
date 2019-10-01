@@ -79,7 +79,7 @@ func TestSet(t *testing.T) {
 		t.Errorf("Test failed.")
 	}
 
-	settings.Set("test_map", "element_3", "test_bool", true)
+	_ = settings.Set("test_map", "element_3", "test_bool", true)
 
 	test1 := true
 	val1 := to.Bool(settings.Get("test_map", "element_3", "test_bool"))
@@ -93,7 +93,7 @@ func TestSet(t *testing.T) {
 func TestWrite(t *testing.T) {
 	settings := New()
 
-	settings.Set("test_map", "element_3", "test_bool", true)
+	_ = settings.Set("test_map", "element_3", "test_bool", true)
 
 	err := settings.Write("_examples/input/settings2.yaml")
 
