@@ -3,9 +3,8 @@ module github.com/esilva-everbridge/yaml
 go 1.13
 
 require (
-	github.com/esilva-everbridge/dig v0.0.0-20180223224648-c61b8cdf35b7
-	github.com/esilva-everbridge/to v0.0.0-20141221203644-c20e083e3123
-	github.com/gosexy/to v0.0.0-20141221203644-c20e083e3123 // indirect
-	gopkg.in/yaml.v2 v2.2.2
-	gopkg.in/yaml.v3 v3.0.0-20190924164351-c8b7dadae555
+	github.com/esilva-everbridge/dig v0.0.0-20191002174514-59878acc76df
+	github.com/esilva-everbridge/to v0.0.0-20191018182308-7b43ee97845e
+	gopkg.in/yaml.v2 v2.2.4 // indirect
+	gopkg.in/yaml.v3 v3.0.0-20191010095647-fc94e3f71652
 )
