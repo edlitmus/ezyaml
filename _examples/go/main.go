@@ -6,8 +6,20 @@ import (
 
 func main() {
 	settings := yaml.New()
-	settings.Set("success", true)
-	settings.Set("nested", "tree", 1)
-	settings.Set("another", "nested", "tree", []int{1, 2, 3})
-	settings.Write("test.yaml")
+	err := settings.Set("success", true)
+	if err != nil {
+		panic(err)
+	}
+	err = settings.Set("nested", "tree", 1)
+	if err != nil {
+		panic(err)
+	}
+	err = settings.Set("another", "nested", "tree", []int{1, 2, 3})
+	if err != nil {
+		panic(err)
+	}
+	err = settings.Write("test.yaml")
+	if err != nil {
+		panic(err)
+	}
 }
