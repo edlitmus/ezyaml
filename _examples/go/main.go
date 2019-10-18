@@ -1,7 +1,7 @@
 package main
 
 import (
-	"menteslibres.net/gosexy/yaml"
+	"github.com/esilva-everbridge/yaml"
 )
 
 func main() {
