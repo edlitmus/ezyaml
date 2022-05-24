@@ -1,6 +1,7 @@
 package yaml
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/esilva-everbridge/to"
@@ -16,6 +17,7 @@ func TestRead(t *testing.T) {
 func TestGet(t *testing.T) {
 
 	settings, err := Open("_examples/input/settings.yaml")
+	fmt.Printf("SETTINGS: %#v\n", settings)
 
 	if err != nil {
 		t.Errorf("Test failed.")
@@ -91,14 +93,34 @@ func TestSet(t *testing.T) {
 }
 
 func TestWrite(t *testing.T) {
-	settings := New()
-
-	_ = settings.Set("test_map", "element_3", "test_bool", true)
-
-	err := settings.Write("_examples/input/settings2.yaml")
+	// settings := New()
+	settings, err := Open("_examples/input/settings2.yaml")
 
 	if err != nil {
 		t.Errorf("Test failed.")
+	}
+
+	_ = settings.Set("test_map", "element_3", "test_bool", true)
+
+	err = settings.Write("_examples/input/settings2.yaml")
+
+	if err != nil {
+		t.Errorf("Test failed.")
+	}
+
+	settings, err = Open("_examples/input/settings2.yaml")
+
+	if err != nil {
+		t.Errorf("Test failed.")
+	}
+
+	_ = settings.Set("test_map", "element_4", "test_bool", true)
+
+	test1 := true
+	val1 := to.Bool(settings.Get("test_map", "element_4", "test_bool"))
+
+	if val1 != test1 {
+		t.Errorf("Got %t expecting %t.", val1, test1)
 	}
 }
 

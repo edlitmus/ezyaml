@@ -30,7 +30,8 @@ import (
 	"os"
 
 	"github.com/esilva-everbridge/dig"
-	yaml "gopkg.in/yaml.v3"
+	// yaml "gopkg.in/yaml.v3"
+	yaml "github.com/mozilla-services/yaml"
 )
 
 // Yaml data type
@@ -114,6 +115,7 @@ func (y *Yaml) Save() error {
 // Write writes the current YAML struct to disk.
 func (y *Yaml) Write(filename string) error {
 
+	// TODO: FIX THIS - Marshal isn't taking comments into account
 	out, err := yaml.Marshal(y.Values)
 
 	if err != nil {
@@ -145,6 +147,11 @@ func (y *Yaml) Read(filename string) error {
 	if err != nil {
 		return err
 	}
+
+	var doc interface{}
+	_ = yaml.Unmarshal(buf, &doc)
+	fmt.Printf("%#v\n", string(buf))
+	fmt.Printf("FOO: %#v\n", doc)
 
 	return yaml.Unmarshal(buf, &y.Values)
 }

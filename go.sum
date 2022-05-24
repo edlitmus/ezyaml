@@ -3,9 +3,7 @@ github.com/esilva-everbridge/dig v0.0.0-20191002174514-59878acc76df/go.mod h1:OM
 github.com/esilva-everbridge/to v0.0.0-20141221203644-c20e083e3123/go.mod h1:P9AQHIs4EM0j8ei5+S0IqjnFcEueux2OM7VTN2BDu3A=
 github.com/esilva-everbridge/to v0.0.0-20191018182308-7b43ee97845e h1:1UUnD+0Ujd0PI1Q8ezps1T6fUrAzfgjzruHkuMERDNQ=
 github.com/esilva-everbridge/to v0.0.0-20191018182308-7b43ee97845e/go.mod h1:Y5/mEKG4GorGCkG0FP75DFJ+aAr1nar5nk7mCljowtw=
+github.com/mozilla-services/yaml v0.0.0-20191106225358-5c216288813c h1:yE1NxRAZA3wF0laDWECtOe2J0tFjSHUI6MXXbMif+QY=
+github.com/mozilla-services/yaml v0.0.0-20191106225358-5c216288813c/go.mod h1:Is/Ucts/yU/mWyGR8yELRoO46mejouKsJfQLAIfTR18=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
-gopkg.in/yaml.v2 v2.2.4 h1:/eiJrUcujPVeJ3xlSWaiNi3uSVmDGBK1pDHUHAnao1I=
-gopkg.in/yaml.v2 v2.2.4/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
-gopkg.in/yaml.v3 v3.0.0-20191010095647-fc94e3f71652 h1:VKvJ/mQ4BgCjZUDggYFxTe0qv9jPMHsZPD4Xt91Y5H4=
-gopkg.in/yaml.v3 v3.0.0-20191010095647-fc94e3f71652/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=

@@ -1,7 +1,8 @@
+# foo bar
 test_string: "Hello World!"
 test_int: 1234
 test_float: 1.2
-test_bool: true
+test_bool: true # baz qux
 test_sequence:
   - Asia
   - America
@@ -17,3 +18,4 @@ test_map: {
     test_sequence: [ "First", "Second", "Third" ]
   }
 }
+# bar baz
