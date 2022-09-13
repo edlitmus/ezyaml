@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/esilva-everbridge/to"
+	"github.com/xiam/to"
 )
 
 func TestRead(t *testing.T) {
