@@ -1,9 +1,9 @@
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/esilva-everbridge/dig v0.0.0-20191002174514-59878acc76df h1:TmdZnI/e2Z2slTr5qm8dgLcxlvPBECO/BDc5jYhnD88=
-github.com/esilva-everbridge/dig v0.0.0-20191002174514-59878acc76df/go.mod h1:OMXU/rXLXSECs3W8tRBOqqNtOTqsb2nl0/a4422svMU=
-github.com/esilva-everbridge/to v0.0.0-20141221203644-c20e083e3123 h1:BRKevk/4GkRqvOAiOAfHgWinhFOqhA/n9Mn9AuqjchM=
-github.com/esilva-everbridge/to v0.0.0-20141221203644-c20e083e3123/go.mod h1:P9AQHIs4EM0j8ei5+S0IqjnFcEueux2OM7VTN2BDu3A=
+github.com/esilva-everbridge/dig v0.0.0-20230222145646-42ad4ced5ae3 h1:fl47Gz55o+rUs7OkMwGQZN3Abs5efRKMCcDBWOOwhfk=
+github.com/esilva-everbridge/dig v0.0.0-20230222145646-42ad4ced5ae3/go.mod h1:9gvntW38KlY7PWDZIkjBxPhuOT+ykm3LgPxxDwLGjXc=
+github.com/esilva-everbridge/to v0.0.0-20220524174750-493ecaf861c8 h1:dLx7TI6NatfvOT4ILPnIE1W0NTI7XAPHXKVePRPJUZ0=
+github.com/esilva-everbridge/to v0.0.0-20220524174750-493ecaf861c8/go.mod h1:4TQUsQ+fnGppSGWJvgY2d2wxBth2F5ym2F/myZPU+PY=
 github.com/mozilla-services/yaml v0.0.0-20201007153854-c369669a6625 h1:5IeGQzguDQ+EsTR5HE7tMYkZe09mqQ9cDypdKQEB5Kg=
 github.com/mozilla-services/yaml v0.0.0-20201007153854-c369669a6625/go.mod h1:Is/Ucts/yU/mWyGR8yELRoO46mejouKsJfQLAIfTR18=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
