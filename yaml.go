@@ -29,7 +29,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/esilva-everbridge/dig"
+	"github.com/edlitmus/dig"
 	// yaml "gopkg.in/yaml.v3"
 	yaml "github.com/mozilla-services/yaml"
 )
